@@ -84,8 +84,8 @@ class MapListViewController: UIViewController {
                 // MARK: - Refresher
                 self.refresher.animate(true)
                 
-                //  MARK: - YelpAPIFactory
-                YelpAPIFactory.getPlaces(coordinates: locationCoordinate) { (error: Error?, places: [Place]?) in
+                //  MARK: - YelpFactory
+                YelpFactory.getPlaces(coordinates: locationCoordinate) { (error: Error?, places: [Place]?) in
                     if error == nil {
                         // MARK: - Refresher
                         self.refresher.animate(false)

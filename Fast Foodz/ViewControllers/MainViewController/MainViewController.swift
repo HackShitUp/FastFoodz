@@ -9,7 +9,6 @@
 import UIKit
 import CoreLocation
 import NavigationTransitionController
-import YelpAPI
 
 
 
@@ -181,6 +180,7 @@ class MainViewController: UIViewController {
         // If we haven't laid out the views yet, do that now
         if !isLoaded {
             // MARK: - UIScrollViews
+            scrollView.alpha = CLLocationManager.authorizationStatus() == .authorizedWhenInUse ? 1.0 : 0.0
             scrollView.contentSize = CGSize(width: pageSize.width * CGFloat(viewControllers.count), height: pageSize.height)
             scrollView.contentInsetAdjustmentBehavior = .never
             scrollView.showsHorizontalScrollIndicator = false

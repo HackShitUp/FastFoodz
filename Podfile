@@ -10,8 +10,6 @@ target 'Fast Foodz' do
   pod 'NVActivityIndicatorView'
   pod 'SDWebImage'
   pod 'SkeletonView'
-  pod 'SwiftyJSON'
-  pod 'YelpAPI'
 
 #  # ignore all warnings from all pods
 #  post_install do |installer|

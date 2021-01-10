@@ -9,7 +9,6 @@
 import UIKit
 import CoreLocation
 import NavigationTransitionController
-import YelpAPI
 
 
 
@@ -92,8 +91,9 @@ extension MainViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         DispatchQueue.main.async {
-            // Hide/show the button
+            // Hide/show the view objects
             self.enableLocationButton.alpha = CLLocationManager.authorizationStatus() == .authorizedWhenInUse ? 0.0 : 1.0
+            self.scrollView.alpha = CLLocationManager.authorizationStatus() == .authorizedWhenInUse ? 1.0 : 0.0
         }
         
         // Only execute the following codeblock if the authorization status was successful

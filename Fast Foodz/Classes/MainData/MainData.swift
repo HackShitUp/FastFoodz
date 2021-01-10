@@ -9,7 +9,6 @@
 import UIKit
 import CoreLocation
 import NavigationTransitionController
-import YelpAPI
 
 
 // MARK: - MainDataDelegate

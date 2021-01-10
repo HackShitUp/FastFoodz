@@ -75,8 +75,8 @@ class MapViewController: UIViewController {
                 return
             }
             
-            //  MARK: - YelpAPIFactory
-            YelpAPIFactory.getPlaces(coordinates: location.coordinate, terms: ["pizza", "mexican", "chinese", "burgers"]) { (error: Error?, places: [Place]?) in
+            //  MARK: - YelpFactory
+            YelpFactory.getPlaces(coordinates: location.coordinate, terms: ["pizza", "mexican", "chinese", "burgers"]) { (error: Error?, places: [Place]?) in
                 if error == nil {
                     
                     // MARK: - MainData

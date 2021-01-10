@@ -28,7 +28,7 @@
 		B777277125AA90CB00B30F0B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777277025AA90CB00B30F0B /* Place.swift */; };
 		B777277925AA923900B30F0B /* MainViewController+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777277825AA923900B30F0B /* MainViewController+Methods.swift */; };
 		B777277D25AA9D4F00B30F0B /* MainViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777277C25AA9D4F00B30F0B /* MainViewController+Delegate.swift */; };
-		B777278B25AAAE4A00B30F0B /* YelpAPIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777278A25AAAE4A00B30F0B /* YelpAPIFactory.swift */; };
+		B777278B25AAAE4A00B30F0B /* YelpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777278A25AAAE4A00B30F0B /* YelpFactory.swift */; };
 		B777279225AAAF6200B30F0B /* LocalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777279125AAAF6200B30F0B /* LocalError.swift */; };
 		B77727A825AAD10100B30F0B /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77727A725AAD10100B30F0B /* MainData.swift */; };
 		B77727AE25AADC2800B30F0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77727AC25AADC2800B30F0B /* DetailViewController.swift */; };
@@ -67,7 +67,7 @@
 		B777277025AA90CB00B30F0B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B777277825AA923900B30F0B /* MainViewController+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Methods.swift"; sourceTree = "<group>"; };
 		B777277C25AA9D4F00B30F0B /* MainViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Delegate.swift"; sourceTree = "<group>"; };
-		B777278A25AAAE4A00B30F0B /* YelpAPIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPIFactory.swift; sourceTree = "<group>"; };
+		B777278A25AAAE4A00B30F0B /* YelpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpFactory.swift; sourceTree = "<group>"; };
 		B777279125AAAF6200B30F0B /* LocalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalError.swift; sourceTree = "<group>"; };
 		B77727A725AAD10100B30F0B /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
 		B77727AC25AADC2800B30F0B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -273,17 +273,17 @@
 		B777278D25AAAE8400B30F0B /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				B777278F25AAAE9000B30F0B /* YelpAPIFactory */,
+				B777278F25AAAE9000B30F0B /* YelpFactory */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
 		};
-		B777278F25AAAE9000B30F0B /* YelpAPIFactory */ = {
+		B777278F25AAAE9000B30F0B /* YelpFactory */ = {
 			isa = PBXGroup;
 			children = (
-				B777278A25AAAE4A00B30F0B /* YelpAPIFactory.swift */,
+				B777278A25AAAE4A00B30F0B /* YelpFactory.swift */,
 			);
-			path = YelpAPIFactory;
+			path = YelpFactory;
 			sourceTree = "<group>";
 		};
 		B777279425AAAF9200B30F0B /* LocalError */ = {
@@ -332,7 +332,7 @@
 			children = (
 				B7E7E9F725AAE4D400717ADB /* ShareContext.swift */,
 			);
-			name = ShareContext;
+			path = ShareContext;
 			sourceTree = "<group>";
 		};
 		B7E7E9FC25AAE50300717ADB /* DetailHeaderView */ = {
@@ -496,7 +496,7 @@
 				B777274B25AA8FBC00B30F0B /* MainNavigationController.swift in Sources */,
 				9762A93723DE2D99005C3A4D /* Colors.swift in Sources */,
 				B777279225AAAF6200B30F0B /* LocalError.swift in Sources */,
-				B777278B25AAAE4A00B30F0B /* YelpAPIFactory.swift in Sources */,
+				B777278B25AAAE4A00B30F0B /* YelpFactory.swift in Sources */,
 				B7E7E9F825AAE4D400717ADB /* ShareContext.swift in Sources */,
 				9716375B23DE511400888D1C /* APIKey.swift in Sources */,
 				9762A92323DE2C1D005C3A4D /* AppDelegate.swift in Sources */,
