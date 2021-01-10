@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-Fast Foodz/Pods-Fast Foodz-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/NavigationTransitionController/NavigationTransitionController.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/YelpAPI/YelpAPI.framework
