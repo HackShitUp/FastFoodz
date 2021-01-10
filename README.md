@@ -15,31 +15,32 @@ _Programming assignment for [Current](https://www.current.com)_
 An interesting thing I noticed about this starter project was that this project still uses the ```AppDelegate.swift```'s ```UIWindow``` value to load its contents. However, devices supporting iOS 13 and greater are expected to use the ```UISceneDelegate``` protocol to support multiple-windows. Even if an app doesn't support multiple app instances, such as this sample project, it's best to follow protocols to prevent introducing breaking changes. So, I upated the *info.plist* specifying the ```UIScene``` configuration's session there.  
 
 Next, I began installing the pods I needed for this project based on its requisites. The first thing I did was architect the project's codebase to organize it based on the following abstractions:
-.- Classes
---- Place
---- LocalError
---- MainData
---- ShareContext
 
-.- Factories
---- YelpFactory
+- Classes
+~ Place
+~ LocalError
+~ MainData
+~ ShareContext
 
-.- Keys
---- Style
+- Factories
+~ YelpFactory
 
-.- ViewControllers
---- DetailViewController
---- MainNavigationController
---- MainViewController
---- MapListViewController
---- MapViewController
+- Keys
+- Style
 
-.- Views
---- Storyboard
---- UICollectionReusableView
---- UICollectionViewCell
---- UICollectionViewFlowLayout
---- UIView
+- ViewControllers
+~ DetailViewController
+~ MainNavigationController
+~ MainViewController
+~ MapListViewController
+~ MapViewController
+
+- Views
+~ Storyboard
+~ UICollectionReusableView
+~ UICollectionViewCell
+~ UICollectionViewFlowLayout
+~ UIView
 
 Then, I began building the ```MainViewController``` which is just a view controller that contains the ```MapViewController``` and ```MapListviewController``` inside of a ```UIScrollView``` object so that the user can easily scroll between the 2 screens (the former view controller needs work with the conflicting pan gesture recognizer). It's also toggle-able using the ```UISegmentedControl``` as specified in the requisites. The ```MainViewController``` adopts the struct, ```MainData```'s protocol, ```MainDataDelegate``` to update its child view controllers whenever the current device's location was updated. 
 
