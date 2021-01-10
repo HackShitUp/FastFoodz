@@ -3,7 +3,7 @@
 _Programming assignment for [Current](https://www.current.com)_
 
 ## Final Project Demo
-[Demo](demo.GIF "Demo")
+![Demo](demo.GIF "Demo")
 
 ## Pods Used In Project
 1. [NavigationTransitionController](https://github.com/Nanogram-Inc/NavigationTransitionController) (Made by yours truly ;]) — Used to create interactive transitions between view controllers. 
